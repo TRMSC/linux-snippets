@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/pdf;
+Actions=printPDF
+
+[Desktop Action printPDF]
+Name=Dokument drucken
+Exec=lp %f
+Icon=document-print
