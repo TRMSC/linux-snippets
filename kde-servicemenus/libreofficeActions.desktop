@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-powerpoint;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.spreadsheet;application/vnd.oasis.opendocument.presentation;text/plain;
+Actions=convertToPDF;printDocument
+
+[Desktop Action convertToPDF]
+Name=In PDF konvertieren
+Exec=libreoffice --headless --convert-to pdf %f
+Icon=document-export
+
+[Desktop Action printDocument]
+Name=Dokument drucken
+Exec=libreoffice --headless -p %f
+Icon=document-print
